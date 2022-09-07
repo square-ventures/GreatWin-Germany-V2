@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  background-image: url('assets/background-mobile.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  top: -1px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.button-cta {
+  width: 200px;
+  height: 40px;
+  display: block;
+}
+
+.button-cta-img {
+  width: 200px;
+  height: 40px;
+  display: block;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.payments {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 18px;
+  opacity: 0.6;
+}
+
+@media (min-width: 2000px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .logo {
+    top: -1px;
+  }
+
+  .steps {
+    gap: 144px;
+    top: 680px !important;
+  }
+}
+
+@media (min-width: 650px) {
+  .logo {
+    width: 206px;
+  }
+
+  body {
+    background-image: url('assets/background-tablet-portrait.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url('assets/background-tablet-landscape.jpg');
+  }
+
+  .logo {
+    width: 206px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-image: url('assets/background-background.jpg');
+  }
+}
+
+.main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 92px;
+}
+
+@media (min-width: 650px) {
+  .main-area-left-banner {
+    width: 578px;
+    height: 438px;
+  }
+
+  .main-area {
+    gap: 32px;
+  }
+
+  .button-cta {
+    width: 254px;
+    height: 56px;
+  }
+
+  .button-cta-img {
+    width: 254px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main-area-left-banner {
+    width: 720px;
+    height: 329px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-area-left-banner {
+    width: 974px;
+    height: 466px;
+  }
+
+  .main-area {
+    margin-top: 21vh !important;
+  }
+}
+
+.main-area-text-and-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+@media (min-width: 650px) {
+  .main-area-text-and-button-area-description {
+    width: 568px;
+    height: 130px;
+  }
+
+  .main-area {
+    margin-top: 138px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main-area-text-and-button-area-description {
+    display: none;
+  }
+}
+
+.main-area-text-and-button-button {
+  width: 167px;
+  height: 40px;
+  background: url('assets/button.png');
+  background-size: cover;
+}
+
+.payment {
+  height: 16px;
+}
+
+.main-area-text-and-button-button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 650px) {
+  .main-area-text-and-button-button {
+    width: 304px;
+    height: 72px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .main-area-text-and-button-button {
+    position: absolute;
+    right: 322px;
+    top: -70px;
+    width: 170px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-area-text-and-button-button {
+    width: 225px;
+    height: 53px;
+    right: 480px;
+    top: -95px;
+  }
+}
+
+.steps {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (min-width: 460px) {
+  .steps {
+    gap: 48px;
+  }
+}
+
+@media (min-width: 650px) {
+  .steps {
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .payment {
+    height: 28px;
+  }
+
+  .payments {
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .steps {
+    gap: 80px;
+    position: absolute;
+    top: 435px;
+  }
+
+  .payments {
+    gap: 43px;
+    margin-right: 56px;
+  }
+
+  .payment {
+    height: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .steps {
+    gap: 105px;
+    top: 670px;
+  }
+
+  .footer-text {
+    font-size: 14px !important;
+  }
+
+  .footer {
+    margin-top: 32px !important;
+  }
+}
+
+.tablet-payment {
+  display: block;
+  -webkit-animation: payment-animation 2s infinite;
+  animation: payment-animation 2s infinite;
+  display: block;
+  margin-top: 30px;
+  opacity: 0.6;
+  width: 116px;
+  height: 36px;
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .step {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .tablet-payment {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .step-number {
+    width: 170px;
+    height: 101px;
+  }
+
+  .footer-text {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .step-number {
+    width: 242px;
+    height: 72px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .step-number {
+    width: 340px;
+    height: 101px;
+  }
+}
+
+@media (min-width: 650px) {
+  .step-text {
+    width: 186px;
+    height: 44px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .step-text {
+    width: 157px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .step-text {
+    width: 189px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .payments {
+    margin-top: 65px;
+  }
+
+  .footer {
+    margin-top: 16px;
+  }
+}
+
+.special-payment {
+  -webkit-animation: payment-animation 2s infinite;
+  animation: payment-animation 2s infinite;
+  display: none;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .special-payment {
+    display: block;
+    width: 129px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .payments {
+    margin-top: 100px;
+  }
+
+  .special-payment {
+    display: block;
+    width: 206px;
+    height: 64px;
+  }
+}
+
+@-webkit-keyframes payment-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer {
+  margin-top: 32px;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+  margin-bottom: 24px;
+  padding-inline: 24px;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .footer-text {
+    max-width: 976px;
+  }
+
+  .button-cta {
+    position: absolute;
+    top: -250px;
+
+    width: 155px;
+    height: 37px;
+  }
+}
+
+@media (min-width: 1920px) and (orientation: landscape) {
+  .footer-text {
+    max-width: 1760px;
+  }
+
+  .button-cta {
+    position: absolute;
+    top: -320px;
+    width: 235px;
+    height: 56px;
+  }
+
+  .payments {
+    gap: 43px !important;
+    margin-top: 12vh;
+  }
+}
+
+@media (min-width: 650px) {
+  .terms-condition {
+    width: 207px;
+    height: 44px;
+    margin-bottom: 32px;
+  }
+  .terms-cond-img {
+    width: 207px;
+    height: 44px;
+  }
+}
+
+.terms-condition:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
